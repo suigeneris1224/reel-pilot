@@ -25,7 +25,7 @@ export default function HomePage() {
         {/* Hero */}
         <div className="mb-10">
           <p className="text-xs font-display font-medium tracking-widest mb-3" style={{ color: 'var(--c-accent)' }}>
-            FACELESSREELS · PERSONAL AUTOPILOT
+            REELPILOT · PERSONAL AUTOPILOT
           </p>
           <h1 className="font-display font-bold text-4xl leading-tight mb-3 text-gradient">
             Your content.<br />Zero face time.

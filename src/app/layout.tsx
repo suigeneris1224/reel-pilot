@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title:       'FacelessReels — AI Reel Generator',
+  title:       'ReelPilot — Auto Pilot for Reels',
   description: 'Generate and auto-post faceless reels to TikTok, Instagram & YouTube on autopilot.',
   icons:       { icon: '/favicon.ico' },
 }

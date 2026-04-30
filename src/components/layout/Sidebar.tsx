@@ -21,10 +21,10 @@ export function Sidebar() {
       <div className="px-6 py-6 flex items-center gap-3" style={{ borderBottom: '1px solid var(--c-border)' }}>
         <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-display font-bold text-sm"
           style={{ background: 'var(--c-accent)' }}>
-          FR
+          RP
         </div>
         <span className="font-display font-700 text-sm tracking-wide" style={{ color: 'var(--c-text)' }}>
-          FacelessReels
+          ReelPilot
         </span>
       </div>
 
