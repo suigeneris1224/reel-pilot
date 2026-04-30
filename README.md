@@ -1,4 +1,4 @@
-# FacelessReels — AI Reel Generator
+# Reel Pilot — AI Reel Generator
 
 Personal autopilot for creating and posting faceless short-form videos to TikTok, Instagram, and YouTube.
 
