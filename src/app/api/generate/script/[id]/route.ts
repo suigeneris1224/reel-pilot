@@ -3,9 +3,11 @@ import type { ApiResponse, ReelJob } from '@/types'
 
 export async function GET(
   _req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
+
     if (!process.env.KV_REST_API_URL) {
       return NextResponse.json<ApiResponse<never>>(
         { success: false, error: 'KV not configured' },
@@ -13,7 +15,7 @@ export async function GET(
       )
     }
     const { getJob } = await import('@/lib/kv')
-    const job = await getJob(params.id)
+    const job = await getJob(id)
     if (!job) {
       return NextResponse.json<ApiResponse<never>>(
         { success: false, error: 'Job not found' },
